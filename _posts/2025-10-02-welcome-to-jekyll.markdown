@@ -1,9 +1,17 @@
 ---
 layout: post
-title: "Tarihte Büyük Krizlerin Ekonomik Kökleri"
-author: Sizin Adınız
-date: 2025-10-02 23:40:00 +0300
-categories: [ekonomi, siyaset]
+title: "Büyük Depresyon: Ekonominin Tarihteki En Büyük Dersi"
+author: [Sizin Adınız] 
+date: 2025-10-02 23:50:00 +0300
+categories: [ekonomi, siyaset, tarih] # Kategorilerinizi buraya yazın
 ---
 
-Bu, Jekyll ile yazdığım ilk makalemdir. Tarihi bir olaydan bahsetmeye başlayın. Örneğin, 1929 Büyük Buhranı'nın kökenleri...
+# 1929'a Giden Yol
+
+Makalenizin ana başlığı burasıdır. Markdown bilginizi kullanarak başlıklar (`#`), listeler (`*` veya `-`), kalın yazılar (`**kalın**`) ve linkler (`[link metni](url)`) kullanın.
+
+Örneğin, makalenize şu konuları ekleyebilirsiniz:
+
+1.  Savaş sonrası ekonomik yapı.
+2.  Borsa balonunun şişirilmesi.
+3.  Siyasi kararların rolü.
