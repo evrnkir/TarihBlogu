@@ -2,7 +2,7 @@
 layout: post
 title: "Soğuk Savaş'tan Alınacak 3 Kritik Siyasi Ders"
 author: Evren Kır 
-date: 2025-10-03 12:45:00 +0300
+date: 2025-10-04 12:45:00 +0300
 categories: [gündem, siyaset, tavsiye]
 ---
 

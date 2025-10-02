@@ -2,7 +2,7 @@
 layout: post
 title: "Antik Roma'da Para Değeri: Dinaris'ten Enflasyona Giden Yol"
 author: Evren Kır
-date: 2025-10-03 12:30:00 +0300
+date: 2025-10-04 12:30:00 +0300
 categories: [analiz, ekonomi, tarih]
 ---
 
