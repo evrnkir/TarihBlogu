@@ -28,7 +28,7 @@ github_username: jekyllrb
 # ------------------------------
 
 # Sitenizin kullandığı temel tema
-theme: minima
+remote_theme: "jekyll/minima"
 
 # Kullanılan eklentiler (GitHub Pages uyumlu eklentiler)
 plugins:
