@@ -1,10 +1,10 @@
----
+---  <-- Üç çizgi ile başlamalı ve bitmeli
 layout: post
 title: "Antik Roma'da Para Değeri: Dinaris'ten Enflasyona Giden Yol"
-author: Evren Kır
-date: 2025-10-04 12:30:00 +0300
+author: Evren Yazar # Buraya kendi adınızı yazabilirsiniz
+date: 2025-10-04 10:00:00 +0300  # Dosya adıyla uyumlu olmalı ve ileri tarihli olmalı
 categories: [analiz, ekonomi, tarih]
----
+---  <-- Üç çizgi ile bitmeli
 
 # Roma Ekonomisinin Gümüş Sırrı
 
