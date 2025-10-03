@@ -12,11 +12,14 @@ Antik Roma, gücünün zirvesindeyken ekonomik istikrarını **denarius** adı v
 
 ---
 
+
 ## Sikke Basım Merkezleri ve Etki Alanları (Harita)
 
 Bu interaktif harita, Roma İmparatorluğu'nun ekonomik yayılımını göstermektedir.
 
-<div id="roma-harita" style="height: 400px; width: 100%;"></div>
+<div id="roma-harita" style="height: 400px; min-height: 400px; width: 100%;"></div>
+
+---
 
 ---
 
