@@ -8,7 +8,8 @@ categories: [analiz, ekonomi, tarih]
 
 # Roma Ekonomisinin Gümüş Sırrı
 
-Antik Roma, gücünün zirvesindeyken ekonomik istikrarını **denarius** adı verilen gümüş sikkelere borçluydu. Ancak imparatorluk büyüdükçe ve harcamalar arttıkça, hükümdarlar kolay bir yola başvurdular: **paranın değerini düşürmek.**
+Antik Roma, gücünün zirvesindeyken ekonomik istikrarını **denarius** adı verilen gümüş sikkelere borçluydu.
+Ancak imparatorluk büyüdükçe ve harcamalar arttıkça, hükümdarlar kolay bir yola başvurdular: **paranın değerini düşürmek.**
 
 ---
 

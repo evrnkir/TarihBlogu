@@ -9,7 +9,6 @@ categories: [ekonomi, siyaset, tarih]
 # 1929'a Giden Yol ve Dünya Ekonomisine Etkisi
 
 Büyük Buhran (The Great Depression), 20. yüzyılın en yıkıcı ekonomik krizidir. 1929 yılında ABD borsasındaki ani çöküşle başlayan bu dönem, tüm dünyada kitlesel işsizliğe, banka iflaslarına ve sosyal karmaşaya yol açmıştır.
-
 ## Krizin Temel Nedenleri
 
 1.  **Savaş Sonrası Ekonomik Yapı:** I. Dünya Savaşı'nın ardından Avrupa'nın yeniden inşası için verilen krediler ve hiperenflasyon ortamı.

@@ -1,18 +1,23 @@
 ---
 layout: page
-title: About
+title: Hakkımda ve Blog Amacı
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Tarih ve Analiz Blogu'na Hoş Geldiniz!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Ben Evren Kır. Bu blog, güncel olayların ve siyasi eğilimlerin kökenlerini **derinlemesine tarihsel analizlerle** anlamlandırmak amacıyla kuruldu. Amacım; ekonomik krizlerden diplomatik anlaşmazlıklara kadar her olayın, tarih sahnesindeki benzerlerinin izlerini sürmek ve okuyuculara daha bütünsel bir bakış açısı sunmaktır.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Misyonumuz
 
+Tarihi sadece geçmişin hikayeleri olarak değil, **bugünün olaylarını anlamak için bir rehber** olarak görüyoruz. Bu nedenle makalelerimizde:
 
-[jekyll-organization]: https://github.com/jekyll
+* **Ekonomik Tarih:** Büyük Buhran veya Antik Roma enflasyonu gibi olayların modern finans üzerindeki etkilerini inceliyoruz.
+* **Siyaset ve Strateji:** Soğuk Savaş dönemi derslerinin günümüzdeki jeopolitik gerilimlere nasıl ışık tuttuğunu analiz ediyoruz.
+* **Veriye Dayalı Anlatım:** Karmaşık konuları herkesin anlayabileceği, haritalar ve verilerle desteklenmiş görsel bir dille sunuyoruz.
+
+Siz de tarihin günümüzü nasıl şekillendirdiğini merak ediyorsanız, doğru yerdesiniz.
+
+### İletişim
+
+Sorularınız, işbirliği teklifleriniz veya makale önerileriniz için bana **ademevrenkir@gmail.com** adresinden ulaşabilirsiniz.

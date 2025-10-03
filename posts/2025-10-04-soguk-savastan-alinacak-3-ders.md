@@ -8,7 +8,8 @@ categories: [gündem, siyaset, tavsiye]
 
 # Tarihin Tekrar Etme Riskleri
 
-Uluslararası ilişkilerde bugün yaşanan bazı gerilimler, 20. yüzyılın ortasındaki **Soğuk Savaş** dönemini akla getiriyor. Peki o dönemden bugünün siyasi liderlerine ve bizlere kalan en önemli dersler neler?
+Uluslararası ilişkilerde bugün yaşanan bazı gerilimler, 20. yüzyılın ortasındaki **Soğuk Savaş** dönemini akla getiriyor.
+Peki o dönemden bugünün siyasi liderlerine ve bizlere kalan en önemli dersler neler?
 
 ## 1. Yanlış Hesaplama Tehlikesi
 
