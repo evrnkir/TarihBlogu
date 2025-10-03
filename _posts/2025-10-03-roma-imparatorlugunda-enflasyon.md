@@ -1,10 +1,10 @@
----  <-- Üç çizgi ile başlamalı ve bitmeli
+---
 layout: post
-title: "Antik Roma'da Para Değeri: Dinaris'ten Enflasyona Giden Yol"
-author: Evren Yazar # Buraya kendi adınızı yazabilirsiniz
-date: 2025-10-04 10:00:00 +0300  # Dosya adıyla uyumlu olmalı ve ileri tarihli olmalı
+title: "Antik Roma'da Para Değeri: Dinaris'ten Hiper Enflasyona Giden Yol"
+author: Evren Yazar
+date: 2025-10-04 10:00:00 +0300
 categories: [analiz, ekonomi, tarih]
----  <-- Üç çizgi ile bitmeli
+---
 
 # Roma Ekonomisinin Gümüş Sırrı
 
@@ -19,6 +19,31 @@ M.S. 1. yüzyılda, bir denarius'taki gümüş oranı yaklaşık %95'ti. Ancak N
 
 Bu durum, modern **hiperenflasyon**un ilk örneklerinden biridir. Mal ve hizmet fiyatları fırladı, halk paraya güvenini kaybetti.
 
-### Okuyucuya Soru (İnteraktif Element Taslağı)
+---
 
-Sizce modern devletlerin yüksek borçlanma politikaları, Roma'nın yaptığı gibi para birimlerinin değerini düşürme riskini taşıyor mu? Yorumlarda tartışalım!
+## Sikke Basım Merkezleri ve Etki Alanları (Harita)
+
+Bu interaktif harita, Roma İmparatorluğu'nun ekonomik yayılımını göstermektedir.
+
+**NOT:** Haritanın tam olarak görünmesi için sitenin ana sayfasına döndükten sonra bu makaleyi **tekrar açmanız** gerekebilir.
+
+<div id="roma-harita" style="height: 400px; width: 100%;"></div>
+
+<script>
+    // 1. Haritayı Başlatma (Harita sadece Div'i göründüğünde başlatılır)
+    var map = L.map('roma-harita').setView([41.9028, 12.4964], 5); // Roma'ya odaklan, Zoom: 5
+
+    // 2. Harita Katmanını Ekleme (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // 3. Markör Ekleme: Roma (Siyasi Merkez)
+    L.marker([41.9028, 12.4964]).addTo(map)
+        .bindPopup('**Roma Şehri:** İmparatorluğun siyasi ve mali merkezi.')
+        .openPopup();
+
+    // 4. Markör Ekleme: Sikke Merkezi (Örnek: Atina)
+    L.marker([37.9838, 23.7275]).addTo(map) 
+        .bindPopup('**Atina:** Önemli bir ticaret ve sikke merkezi. Enflasyonun en çok hissedildiği bölgelerden.')
+</script>
