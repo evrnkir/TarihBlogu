@@ -26,3 +26,4 @@ M.S. 1. yüzyılda, bir denarius'taki gümüş oranı yaklaşık %95'ti. Ancak N
 
 * **M.S. 2. Yüzyıl:** Gümüş oranı %50'ye düştü.
 * **M.S. 3. Yüzyıl:** Gümüş oranı neredeyse %5'e düştü (bronz sikke haline geldi).
+  
