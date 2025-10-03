@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Son Analizler ve Gündem 
 ---
 
 <div class="posts-list">
