@@ -47,3 +47,6 @@ exclude:
   - vendor/ruby/
 
   # cache_buster: 20251003_4
+  # Navigation links (header_pages)
+header_pages:
+  - about.markdown
