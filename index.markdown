@@ -1,9 +1,7 @@
 ---
-# Front Matter (Değiştirmeyin)
 layout: home
+title: Son Analizler ve Gündem # Ana sayfa başlığı olarak görünecek
 ---
-
-# Son Analizler ve Gündem
 
 {% for post in site.posts %}
   <div class="post-item">
@@ -16,7 +14,11 @@ layout: home
       {% if post.categories.size > 0 %} | Kategori: {{ post.categories | join: ", " }} {% endif %}
     </p>
     
-    {{ post.excerpt | strip_html | truncatewords: 30 }}
+    {% comment %} 
+      Bu kısım, makalenin ilk paragrafını özet olarak gösterecek.
+      Eğer makalenizde `` etiketi kullanırsanız, o etikete kadar olan kısmı gösterir.
+    {% endcomment %}
+    {{ post.excerpt }}
     <a href="{{ post.url | relative_url }}"> [Devamını Oku]</a>
     
     <hr>
