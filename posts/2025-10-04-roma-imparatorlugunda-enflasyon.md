@@ -16,9 +16,7 @@ Antik Roma, gücünün zirvesindeyken ekonomik istikrarını **denarius** adı v
 
 Bu interaktif harita, Roma İmparatorluğu'nun ekonomik yayılımını göstermektedir.
 
-{% raw %}
 <div id="roma-harita" style="height: 400px; width: 100%;"></div>
-{% endraw %}
 
 ---
 
