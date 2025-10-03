@@ -18,25 +18,6 @@ Bu interaktif harita, Roma İmparatorluğu'nun ekonomik yayılımını gösterme
 
 {% raw %}
 <div id="roma-harita" style="height: 400px; width: 100%;"></div>
-
-<script>
-    // 1. Haritayı Başlatma
-    var map = L.map('roma-harita').setView([41.9028, 12.4964], 5);
-
-    // 2. Harita Katmanını Ekleme (OpenStreetMap)
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    // 3. Markör Ekleme: Roma
-    L.marker([41.9028, 12.4964]).addTo(map)
-        .bindPopup('**Roma Şehri:** Siyasi Merkez.')
-        .openPopup();
-
-    // 4. Markör Ekleme: Sikke Merkezi (Atina)
-    L.marker([37.9838, 23.7275]).addTo(map) 
-        .bindPopup('**Atina:** Ticaret ve Sikke Merkezi.')
-</script>
 {% endraw %}
 
 ---

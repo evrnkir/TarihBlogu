@@ -26,5 +26,25 @@
      integrity="sha256-20n6a9c9474wdrM96JgqVIVzV5vR2w7mSFr+c0Tz5vM="
      crossorigin=""></script>
     
-    </body>
+    <script>
+      // Harita sadece 'roma-harita' ID'si varsa başlatılır.
+      if (document.getElementById('roma-harita')) {
+        
+          var map = L.map('roma-harita').setView([41.9028, 12.4964], 5);
+
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+
+          // Markör Ekleme: Roma
+          L.marker([41.9028, 12.4964]).addTo(map)
+              .bindPopup('**Roma Şehri:** Siyasi Merkez.')
+              .openPopup();
+
+          // Markör Ekleme: Sikke Merkezi (Atina)
+          L.marker([37.9838, 23.7275]).addTo(map) 
+              .bindPopup('**Atina:** Ticaret ve Sikke Merkezi.')
+      }
+    </script>
+  </body>
 </html>
