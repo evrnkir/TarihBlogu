@@ -15,9 +15,6 @@ title: Son Analizler ve Gündem
       {% if post.categories.size > 0 %} | Kategoriler: {{ post.categories | join: ", " }} {% endif %}
     </p>
     
-    {% comment %} 
-      Sadece HTML etiketlerini temizlenmiş metin özetini gösteriyoruz.
-    {% endcomment %}
     {{ post.excerpt | strip_html }}
     <a href="{{ post.url | relative_url }}"> [Devamını Oku]</a>
     
