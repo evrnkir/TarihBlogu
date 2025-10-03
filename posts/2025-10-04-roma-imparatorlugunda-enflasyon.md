@@ -11,14 +11,13 @@ categories: [analiz, ekonomi, tarih]
 Antik Roma, gücünün zirvesindeyken ekonomik istikrarını **denarius** adı verilen gümüş sikkelere borçluydu. Ancak imparatorluk büyüdükçe ve harcamalar arttıkça, hükümdarlar kolay bir yola başvurdular: **paranın değerini düşürmek.**
 
 ---
-
-
 ## Sikke Basım Merkezleri ve Etki Alanları (Harita)
 
 Bu interaktif harita, Roma İmparatorluğu'nun ekonomik yayılımını göstermektedir.
 
 <div id="roma-harita" style="height: 400px; min-height: 400px; width: 100%;"></div>
 
+---
 ---
 
 ---
