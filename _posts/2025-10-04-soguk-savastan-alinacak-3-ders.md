@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Soğuk Savaş'tan Alınacak 3 Kritik Siyasi Ders"
-author: Evren Yazar # Buraya kendi adınızı yazabilirsiniz
-date: 2025-10-04 10:30:00 +0300 # İkinci makalenin saati ilk makaleden farklı olmalı
+author: Evren Yazar
+date: 2025-10-04 10:30:00 +0300
 categories: [gündem, siyaset, tavsiye]
 ---
 
@@ -21,12 +21,3 @@ SSCB'nin çöküşüne neden olan şeyin askeri bir mağlubiyetten çok **ekonom
 ## 3. Vekil Savaşlarından Kaçınmak
 
 Büyük güçler arasındaki çatışmalar genellikle **vekil savaşları** (proxy wars) aracılığıyla yaşandı. Bu, çatışmayı üçüncü ülkelere taşıyarak insani ve ekonomik maliyeti katladı.
-
----
-
-## Sırada Ne Var?
-
-1.  **Kaydedin ve Kontrol Edin:** Her iki `.md` dosyasını da **kaydedin**.
-2.  **Yükleyin:** VS Code'da **Source Control** sekmesine gidin, bu iki yeni dosyayı **commit** edin ("İlk analiz ve gündem makaleleri eklendi") ve **GitHub'a push edin**.
-
-GitHub sitenizi yeniden oluşturduktan sonra, ana sayfanızda artık toplam **üç farklı makale** görmelisiniz. Başarıyla yüklendiğini onaylayınca, sitenizi daha da güzelleştirmeye başlayabiliriz!
