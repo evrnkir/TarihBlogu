@@ -1,8 +1,9 @@
 ---
 layout: home
-title: Son Analizler ve Gündem # Ana sayfa başlığı olarak görünecek
+title: Son Analizler ve Gündem 
 ---
 
+<div class="posts-list">
 {% for post in site.posts %}
   <div class="post-item">
     <h2 class="post-title">
@@ -11,16 +12,16 @@ title: Son Analizler ve Gündem # Ana sayfa başlığı olarak görünecek
     <p class="post-meta">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
       {% if post.author %} - Yazar: {{ post.author }}{% endif %}
-      {% if post.categories.size > 0 %} | Kategori: {{ post.categories | join: ", " }} {% endif %}
+      {% if post.categories.size > 0 %} | Kategoriler: {{ post.categories | join: ", " }} {% endif %}
     </p>
     
     {% comment %} 
-      Bu kısım, makalenin ilk paragrafını özet olarak gösterecek.
-      Eğer makalenizde `` etiketi kullanırsanız, o etikete kadar olan kısmı gösterir.
+      Sadece HTML etiketlerini temizlenmiş metin özetini gösteriyoruz.
     {% endcomment %}
-    {{ post.excerpt }}
+    {{ post.excerpt | strip_html }}
     <a href="{{ post.url | relative_url }}"> [Devamını Oku]</a>
     
     <hr>
   </div>
 {% endfor %}
+</div>
