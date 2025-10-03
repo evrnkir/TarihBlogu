@@ -1,0 +1,47 @@
+# ------------------------------
+# SİTE BİLGİLERİ VE BAŞLIKLAR
+# ------------------------------
+
+title: Tarih ve Analiz Blogu
+email: sizin-eposta-adresiniz@example.com
+description: >- # Sitenizin Google aramalarında görünecek kısa açıklaması
+  Tarihi  olayların ekonomi, siyaset ve bilim üzerindeki derinlemesine
+  analizlerini içeren makaleler.
+
+# ------------------------------
+# GITHUB PAGES AYARLARI (KRİTİK)
+# ------------------------------
+# Not: Bu ayarlar 404 sorununu çözmek için ZORUNLUDUR.
+
+# GitHub kullanıcı adınızın olduğu ana alan adınız.
+url: "https://evmkr.github.io" 
+
+# Deponuzun adı (Sitenizin alt klasör adı: /TarihBlogu/)
+baseurl: "/TarihBlogu" 
+
+# Twitter ve GitHub gibi sosyal medya hesaplarınızı buraya ekleyebilirsiniz.
+twitter_username: jekyllrb
+github_username: jekyllrb
+
+# ------------------------------
+# JEKYLL YAPI AYARLARI
+# ------------------------------
+
+# Sitenizin kullandığı temel tema
+remote_theme: "jekyll/minima"
+
+# Kullanılan eklentiler (GitHub Pages uyumlu eklentiler)
+plugins:
+  - jekyll-feed
+
+# İşlem dışı bırakılacak dosyalar ve klasörler
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
