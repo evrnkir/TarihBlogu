@@ -2,12 +2,17 @@
 # Front Matter
 ---
 
-@import "minima"; /* Minima temasının tüm varsayılan stillerini içeri aktarır */
+/* @import "minima"; ARTIK YOK */
 
 /* ---------------------------------
    DARK MODE VE FÜTÜRİSTİK CSS BAŞLANGICI
    ---------------------------------
 */
+
+:root {
+    --color-bg: #121212; /* Koyu arka plan */
+    --color-text: #E0E0E0; /* Açık gri yazı */
+// ... Geri kalan Dark Mode CSS kodunuz buraya gelmeli ...
 
 :root {
     --color-bg: #121212; /* Koyu arka plan */
