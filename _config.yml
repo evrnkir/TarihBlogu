@@ -50,3 +50,8 @@ exclude:
   # Navigation links (header_pages)
 header_pages:
   - about.markdown
+  # SASS Derleyici Ayarları
+sass:
+  style: compressed
+  load_paths:
+    - _sass
