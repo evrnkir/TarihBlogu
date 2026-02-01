@@ -10,7 +10,25 @@ title: Ana Sayfa
   <p style="font-style: italic; color: #666; margin-bottom: 40px;">
     Tarih, Teknoloji ve Stratejinin Kesişim Noktası
   </p>
-
+<style>
+  .post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  .post-card {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  .post-card:hover {
+    transform: translateY(-5px);
+    border-color: #8b0000;
+  }
+</style>
   {% for post in site.posts %}
     <article class="post-item" style="margin-bottom: 50px; padding: 25px; border-left: 5px solid #8b0000; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
       <h2 class="post-title" style="margin-top: 0;">

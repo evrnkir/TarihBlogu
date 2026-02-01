@@ -1,48 +1,99 @@
----
-# Jekyll'ın bu dosyayı işlemesi için bu çizgiler şarttır
----
-
-// Temel temayı içe aktar
-@import "minima"; 
-
-// ------------------------------
-// ÖZEL PROFESYONEL DOKUNUŞLAR
-// ------------------------------
-
+/* --- Temel Değişkenler ve Sıfırlama --- */
 body {
-  background-color: #fdfcf8; // Hafif antik kağıt dokusu
-  color: #2c3e50;
-  font-family: 'Lora', 'Georgia', serif; // Akademik yazı tipi
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.8;
 }
 
-// Site Başlığı (Mühür Kırmızısı)
-.site-title {
-  color: #8b0000 !important; 
-  font-weight: bold !important;
-  letter-spacing: -1px;
+.wrapper {
+  max-width: 900px; /* Okunabilirlik için ideal genişlik */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-// Makale Listesi Düzeni
-.post-item {
-  border-left: 4px solid #8b0000; // Analizlerin yanındaki kırmızı çizgi
-  padding-left: 20px;
-  margin-bottom: 50px;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  border-radius: 0 5px 5px 0;
+/* --- Header & Navigasyon (Mobil Uyumlu) --- */
+.site-header {
+  border-bottom: 2px solid #8b0000;
+  padding: 15px 0;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.post-link {
-  color: #8b0000 !important;
-  font-size: 1.6rem;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Mobilde taşmayı önler */
+}
+
+.site-nav {
+  display: flex;
+  gap: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .site-header .wrapper {
+    flex-direction: column; /* Mobilde logo, menü ve dil alt alta gelir */
+    gap: 10px;
+  }
+  
+  .site-nav {
+    justify-content: center;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+/* --- İçerik ve Görsel Elemanlar --- */
+canvas, img, iframe {
+  max-width: 100% !important; /* Ekrandan taşmasını engeller */
+  height: auto !important;
+  border-radius: 8px;
+}
+
+/* --- Yazı Listesi (Grid Yapısı) --- */
+.post-list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr; /* Mobilde tek sütun */
+  gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .post-list {
+    grid-template-columns: 1fr 1fr; /* Masaüstünde çift sütun (isteğe bağlı) */
   }
 }
 
 .post-meta {
-  font-style: italic;
-  color: #666;
-  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.post-link {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #8b0000;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+.site-footer {
+  margin-top: auto;
+  padding: 40px 0;
+  background-color: #fdfcf8;
+  border-top: 1px solid #eee;
 }
