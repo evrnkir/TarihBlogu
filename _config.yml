@@ -1,30 +1,23 @@
-# ------------------------------
-# SİTE BİLGİLERİ VE BAŞLIKLAR
-# ------------------------------
-
+# Site Bilgileri
 title: Tarih ve Analiz Blogu
 email: ademevrenkir@gmail.com
 description: >-
   Tarihi olayların ekonomi, siyaset ve bilim üzerindeki derinlemesine
   analizlerini içeren makaleler.
 
-# ------------------------------
-# GITHUB PAGES AYARLARI (KRİTİK)
-# ------------------------------
-
-url: "https://evrnkir.github.io" 
+# URL Ayarları
+url: "https://evrnkir.github.io"
 baseurl: "/TarihBlogu"
 
-# ------------------------------
-# JEKYLL YAPI AYARLARI
-# ------------------------------
+# Tema ve Stil
+theme: minima
 
-theme: minima # Stil sorunlarını çözen kritik satır
-
+# Eklentiler (Hata veren kısım burasıydı, tirelerin hizasına dikkat!)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Dosya İstisnaları
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -32,13 +25,12 @@ exclude:
   - Gemfile.lock
   - vendor/
 
+# Sayfa Ayarları
 header_pages:
   - about.markdown
 
-# SASS Derleyici Ayarları
+# Sass Ayarları
 sass:
   style: compressed
   load_paths:
     - _sass
-    [cite_start]email: ademevrenkir@gmail.com [cite: 10]
-github_username: evrnkir
