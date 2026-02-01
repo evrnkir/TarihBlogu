@@ -1,31 +1,29 @@
 ---
 layout: default
-title: Ana Sayfa | AEK Analiz
+title: AEK Analiz | Stratejik Bakış
 ---
 
-<div style="text-align: center; padding: 25px 0;">
-  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" style="width: 150px !important; height: auto !important; display: block; margin: 0 auto;">
-  <h1 style="color: #8b0000; margin-top: 15px; font-size: 1.8rem;">// GÜNCEL PROJE ANALİZLERİ //</h1>
-  <p style="font-style: italic; color: #666; margin-top: -10px;">Tarih, Teknoloji ve Stratejinin Kesişim Noktası</p>
+<header style="text-align: center; padding: 40px 0 20px 0;">
+  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="AEK Logo" style="width: 130px; opacity: 0.9;">
+  <h1 style="font-size: 2.2rem; color: #1a1a1a; margin-top: 20px; font-weight: 800; letter-spacing: -1px;">// STRATEJİK PORTFÖY //</h1>
+  <p style="color: #888; font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.5;">Ekonomik tarih, finansal piyasalar ve teknoloji üzerine derinlemesine raporlar.</p>
+</header>
+
+<div style="background: #fff; border-radius: 50px; padding: 5px 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.02); margin-bottom: 40px;">
+  {% include market-ticker.html %}
 </div>
 
-{% include market-ticker.html %}
-
 ---
 
-<h2 style="margin-bottom: 30px; border-bottom: 2px solid #8b0000; display: inline-block;">Son Analizler & Raporlar</h2>
-
 <div class="post-list">
+  <h2 style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 30px; text-align: center;">Güncel Raporlar</h2>
+  
   {% for post in site.posts %}
-    <div class="post-item">
+    <article class="post-item">
       <div class="post-meta">{{ post.date | date: "%d %B %Y" }}</div>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h3>
-      <p style="color: #444; font-size: 0.95rem;">
-        {{ post.excerpt | strip_html | truncatewords: 25 }}
-      </p>
-      <a href="{{ post.url | relative_url }}" style="font-weight: bold; font-size: 0.85rem; color: #8b0000; text-transform: uppercase;">Analizi Oku →</a>
-    </div>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <p style="color: #666; font-size: 1rem; margin-bottom: 0;">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      <a href="{{ post.url | relative_url }}" class="read-more">ANALİZİ İNCELE →</a>
+    </article>
   {% endfor %}
 </div>
