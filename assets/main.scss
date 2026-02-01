@@ -1,109 +1,48 @@
 ---
-# Front Matter
+# Jekyll'ın bu dosyayı işlemesi için bu çizgiler şarttır
 ---
 
-/* @import "minima"; ARTIK YOK */
+// Temel temayı içe aktar
+@import "minima"; 
 
-/* ---------------------------------
-   DARK MODE VE FÜTÜRİSTİK CSS BAŞLANGICI
-   ---------------------------------
-*/
+// ------------------------------
+// ÖZEL PROFESYONEL DOKUNUŞLAR
+// ------------------------------
 
-:root {
-    --color-bg: #121212; /* Koyu arka plan */
-    --color-text: #E0E0E0; /* Açık gri yazı */
-// ... Geri kalan Dark Mode CSS kodunuz buraya gelmeli ...
-
-:root {
-    --color-bg: #121212; /* Koyu arka plan */
-    --color-text: #E0E0E0; /* Açık gri yazı */
-    --color-accent: #00ffaa; /* Fütüristik neon yeşil */
-    --color-card: #1E1E1E; /* Kart arka planı */
-    --color-link-hover: #00cc88;
-}
-
-// Genel Sayfa Stilleri ve Minima Teması Üzerine Yazma
 body {
-    font-family: 'Roboto Mono', monospace; /* Fütüristik font */
-    background-color: var(--color-bg) !important;
-    color: var(--color-text) !important;
-    line-height: 1.6;
+  background-color: #fdfcf8; // Hafif antik kağıt dokusu
+  color: #2c3e50;
+  font-family: 'Lora', 'Georgia', serif; // Akademik yazı tipi
 }
 
-// Container'ı Sayfayı Ortalayacak Şekilde Ayarlama
-.wrapper {
-    max-width: 900px !important;
+// Site Başlığı (Mühür Kırmızısı)
+.site-title {
+  color: #8b0000 !important; 
+  font-weight: bold !important;
+  letter-spacing: -1px;
 }
 
-// Başlık ve Menü Renkleri
-.site-header {
-    background-color: var(--color-bg) !important;
-    border-bottom-color: var(--color-card) !important;
+// Makale Listesi Düzeni
+.post-item {
+  border-left: 4px solid #8b0000; // Analizlerin yanındaki kırmızı çizgi
+  padding-left: 20px;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 0 5px 5px 0;
 }
 
-.site-title a {
-    color: var(--color-accent) !important;
-    font-size: 2.5rem;
-    text-shadow: 0 0 10px rgba(0, 255, 170, 0.5); 
-    font-weight: 700;
-}
-
-.page-content {
-    padding-top: 50px; 
-}
-
-// Makale Başlıkları
-.post-list-heading, .section h2 {
-    color: var(--color-accent);
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-    border-left: 4px solid var(--color-accent);
-    padding-left: 15px;
-}
-
-// Link ve Metin Renkleri
-a {
-    color: var(--color-accent);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: var(--color-link-hover);
+.post-link {
+  color: #8b0000 !important;
+  font-size: 1.6rem;
+  text-decoration: none;
+  &:hover {
     text-decoration: underline;
+  }
 }
 
-// ---------------------------------
-// YENİ GİRİŞ KARTI (CARD) SİSTEMİ
-// ---------------------------------
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background-color: var(--color-card);
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #333;
-    transition: transform 0.3s, border-color 0.3s;
-    min-height: 200px; /* Görsel bütünlük için */
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-accent);
-    box-shadow: 0 5px 20px rgba(0, 255, 170, 0.1);
-}
-
-.card h3 {
-    margin-top: 0;
-    color: var(--color-text);
-}
-
-.card p {
-    color: #a0a0a0; /* Daha mat gri */
-    font-size: 0.9em;
+.post-meta {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
 }

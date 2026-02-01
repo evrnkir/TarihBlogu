@@ -3,44 +3,40 @@
 # ------------------------------
 
 title: Tarih ve Analiz Blogu
-email: sizin-eposta-adresiniz@example.com
-description: >- # Sitenizin Google aramalarında görünecek kısa açıklaması
-  Tarihi olayların ekonomi, siyaset ve bilim üzerindeki derinlemesine
-  analizlerini içeren makaleler.
+email: ademevrenkir@gmail.com
+description: >-
+  Tarihi olayların ekonomi, siyaset ve bilim üzerindeki derinlemesine
+  analizlerini içeren makaleler.
 
 # ------------------------------
 # GITHUB PAGES AYARLARI (KRİTİK)
 # ------------------------------
 
-url: "https://evmkr.github.io" 
-baseurl: "/TarihBlogu" 
-twitter_username: jekyllrb
-github_username: jekyllrb
+url: "https://evrnkir.github.io" 
+baseurl: "/TarihBlogu"
 
 # ------------------------------
 # JEKYLL YAPI AYARLARI
 # ------------------------------
 
-# Sitenizin kullandığı temel tema ARTIK YOK
+theme: minima # Stil sorunlarını çözen kritik satır
 
-# Kullanılan eklentiler (Minima'ya ait eklentiler ARTIK YOK)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
 
-  # cache_buster: 20251003_4
 header_pages:
-  - about.markdown
-  # SASS Derleyici Ayarları
+  - about.markdown
+
+# SASS Derleyici Ayarları
 sass:
-  style: compressed
-  load_paths:
-    - _sass
+  style: compressed
+  load_paths:
+    - _sass
