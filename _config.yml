@@ -6,9 +6,9 @@ url: "https://evrnkir.github.io"
 
 theme: minima
 plugins:
-- jekyll-feed
+  - jekyll-feed
 
 header_pages:
-- about.markdown
-- projects.md
-- reading-list.md
+  - about.markdown
+  - projects.md
+  - reading-list.md
