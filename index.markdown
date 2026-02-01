@@ -3,18 +3,18 @@ layout: home
 title: Ana Sayfa | Tarih ve Analiz Blogu
 ---
 
-<div style="text-align: center; margin: 30px 0;">
-  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="AEK Logo" style="width: 180px; height: auto; max-width: 250px;">
+<div style="text-align: center; margin: 15px 0; width: 100%;">
+  <img src="{{ '/assets/images/logo.png' | relative_url }}" 
+       alt="AEK Logo" 
+       style="width: 150px !important; height: auto !important; max-width: 150px !important; display: block; margin: 0 auto;">
   
-  <h1 style="color: #8b0000; margin-top: 20px;">// GÜNCEL PROJE ANALİZLERİ //</h1>
+  <h1 style="color: #8b0000; margin-top: 15px; font-size: 1.8rem;">// GÜNCEL PROJE ANALİZLERİ //</h1>
   <p style="font-style: italic; color: #666;">Tarih, Teknoloji ve Stratejinin Kesişim Noktası</p>
 </div>
 
 ---
 
 ## Öne Çıkan Çalışmalar
-
-Sitenin bu bölümünde, uluslararası ticaret, finansal piyasalar ve teknoloji üzerine yaptığım derinlemesine analizleri bulabilirsiniz.
 
 <div class="post-list-container">
   {% for post in site.posts %}
@@ -28,11 +28,3 @@ Sitenin bu bölümünde, uluslararası ticaret, finansal piyasalar ve teknoloji 
     </div>
   {% endfor %}
 </div>
-
-<style>
-  /* Mobilde kartların daha iyi görünmesi için */
-  @media screen and (max-width: 600px) {
-    h1 { font-size: 1.5rem !important; }
-    .post-list-container div { padding: 15px !important; }
-  }
-</style>

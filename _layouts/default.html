@@ -17,24 +17,36 @@
 
     <style>
       body { color: #333; line-height: 1.8; overflow-x: hidden; }
+      
       @media screen and (max-width: 768px) {
-        .site-header .wrapper { flex-direction: column !important; text-align: center !important; }
-        .site-nav { margin: 10px 0; gap: 10px !important; }
+        .site-header .wrapper {
+          flex-direction: column !important;
+          text-align: center !important;
+          padding: 10px 0;
+        }
+        .site-nav {
+          margin: 10px 0;
+          gap: 10px !important;
+          justify-content: center;
+        }
       }
-      canvas, img, iframe { max-width: 100% !important; height: auto !important; border-radius: 8px; display: block; margin: 20px auto; }
-      /* Ana Sayfa Logosunu Sınırla */
-.main-logo-container img {
-  width: 200px !important; /* İdeal boyut */
-  height: auto !important;
-  margin: 0 auto;
-}
 
-/* Mobilde logonun çok küçük kalmaması için */
-@media screen and (max-width: 600px) {
-  .main-logo-container img {
-    width: 150px !important;
-  }
-}
+      /* Logo boyutu kesin sınırlama */
+      img[alt="AEK Logo"] {
+        width: 150px !important;
+        height: auto !important;
+        max-width: 150px !important;
+        display: block;
+        margin: 0 auto;
+      }
+
+      canvas, img:not([alt="AEK Logo"]), iframe {
+        max-width: 100% !important;
+        height: auto !important;
+        border-radius: 8px;
+        display: block;
+        margin: 20px auto;
+      }
     </style>
 
   </body>
