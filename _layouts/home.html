@@ -4,17 +4,32 @@ layout: default
 
 <div class="home">
     
+    ---
+layout: default
+---
+
+<div class="home">
     <header style="text-align: center; padding-bottom: 40px;">
-        <div class="home-logo-container" style="margin-bottom: 25px; margin-top: 10px;">
-            <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="AEK Analiz Logo" style="max-width: 200px; height: auto; transition: transform 0.3s ease;">
+        <div class="home-logo-container" style="margin-bottom: 25px;">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="AEK Analiz Logo" style="max-width: 200px; height: auto;">
         </div>
-        <h1 style="font-size: 1.4rem; color: #8b0000; margin-bottom: 0; font-family: 'Lora', serif; font-weight: bold;">
-            // GÜNCEL PROJE ANALİZLERİ //
-        </h1>
-        <p style="font-size: 1.1rem; color: #666; margin-top: 8px; font-style: italic;">
-            Tarih, Teknoloji ve Stratejinin Kesişim Noktası
-        </p>
+        
+        <h1 style="font-size: 1.4rem; color: #8b0000; margin-bottom: 0;">// GÜNCEL PROJE ANALİZLERİ //</h1>
+        <p style="font-size: 1.1rem; color: #666; margin-top: 8px;">Tarih, Teknoloji ve Stratejinin Kesişim Noktası</p>
     </header>
+
+    <section class="section">
+        <h2>Öne Çıkan Çalışmalar</h2>
+        <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            {% for post in site.posts limit: 3 %}
+                <div class="card" style="padding: 20px; border-left: 5px solid #8b0000; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3><a href="{{ post.url | relative_url }}" style="color: #8b0000; text-decoration: none;">{{ post.title | escape }}</a></h3>
+                    <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
 
     <section class="section" style="margin-bottom: 50px;">
         <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; color: #2c3e50;">Öne Çıkan Çalışmalar</h2>
