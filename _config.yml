@@ -28,6 +28,7 @@ exclude:
 # Sayfa Ayarları
 header_pages:
   - about.markdown
+  - projects.md
   - reading-list.md
 languages: ["tr", "en"]
 # Sass Ayarları
