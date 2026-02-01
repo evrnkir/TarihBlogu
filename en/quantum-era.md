@@ -3,7 +3,7 @@ layout: post
 title: "The Transition to the Quantum Era: A New Definition of Strategic Advantage"
 author: Adem Evren Kır
 date: 2026-02-01
-lang: en
+permalink: /en/quantum-era/
 ---
 
 # Quantum Computing, Cybersecurity, and Strategic Superiority
