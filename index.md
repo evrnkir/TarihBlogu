@@ -3,10 +3,10 @@ layout: default
 title: Ana Sayfa | Tarih ve Analiz Blogu
 ---
 
-<div style="text-align: center; padding: 15px 0;">
+<div style="text-align: center; padding: 20px 0;">
   <img src="{{ '/assets/images/logo.png' | relative_url }}" 
        alt="AEK Logo" 
-       style="width: 150px !important; height: auto !important; display: block; margin: 0 auto; border: none;">
+       style="width: 150px !important; height: auto !important; display: block; margin: 0 auto;">
   
   <h1 style="color: #8b0000; margin-top: 15px; font-size: 1.8rem;">// GÜNCEL PROJE ANALİZLERİ //</h1>
   <p style="font-style: italic; color: #666;">Tarih, Teknoloji ve Stratejinin Kesişim Noktası</p>
