@@ -1,25 +1,60 @@
 ---
 layout: post
 title: "Yapay Zeka Etiği: Makineler Kime Göre Karar Vermeli?"
-author: Evren Yazar
-date: 2025-10-06 10:00:00 +0300
-categories: [teknoloji, felsefe, gelecek]
+author: Adem Evren Kır
+date: 2026-02-01 11:00:00 +0300
+categories: [teknoloji, etik, hukuk]
 ---
 
-# Yapay Zeka Kararlarının Derin Ahlaki İkilemleri
+# Algoritmaların Ahlaki Sorumluluğu
 
-Yapay zeka sistemleri artık sadece veri analizi yapmıyor; kredi başvurularını onaylıyor, tıbbi teşhis koyuyor ve otonom araçlarda hayat-kurtarıcı anlık kararlar veriyor. Bu durum, bizi modern felsefenin en büyük sınavlarından biriyle karşı karşıya bırakıyor: **Algoritmalar kime göre 'doğru' kararı vermelidir?**
+Yapay zeka (YZ), artık sadece veri işleyen bir araç değil, otonom kararlar veren bir aktör haline gelmiştir. Ancak bu kararların arkasındaki "etik çerçeve" hala gri bir alandadır. Medipol Üniversitesi'nde sürdürdüğüm akademik çalışmalarımda da vurguladığım üzere, bu kararların hukuki ve ekonomik sorumluluğu geleceğin en büyük tartışma konusu olacaktır.
 
-## Etik Çerçevenin Temelleri
+## Veri Taraflılığı ve Adalet
 
-Yapay zeka etiği genellikle üç ana felsefi akım üzerine inşa edilir:
+Bir YZ modeli, eğitildiği verideki insan önyargılarını kopyalama eğilimindedir. Eğer veri setinde tarihsel bir ayrımcılık varsa, algoritma bu ayrımcılığı "optimizasyon" adı altında meşrulaştırabilir. Bu durum, özellikle uluslararası ticaret ve kredi skorlama sistemlerinde ciddi riskler barındırmaktadır.
 
-1.  **Sonuç Odaklılık (Utilitarianism):** Kararın sonucunda en çok kişinin fayda sağlaması esas alınır. (Örn: Otonom araç kazasında en az hasar nerede olur?)
-2.  **Kural Odaklılık (Deontology):** Belli kurallara ve evrensel görevlere uymak esas alınır. (Örn: Asla yalan söyleme kuralına uymak.)
-3.  **Erdem Etiği (Virtue Ethics):** Kararı alan sistemin veya programcının sahip olması gereken erdemlere odaklanır.
+#### Karar Alma Süreçlerinde İnsan vs. YZ Güveni
+Aşağıdaki grafik, karmaşık etik ikilemlerde toplumun insana duyduğu güven ile algoritmaya duyduğu güven arasındaki makası göstermektedir:
 
-## Karar Mekanizmalarındaki Yanlılık
+<canvas id="etikChart" width="400" height="200" style="background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 8px; margin: 20px 0;"></canvas>
 
-Eğitim verilerindeki tarihsel, kültürel veya ırksal önyargılar, yapay zekanın kararlarına da sızar. Bir yapay zeka sistemi, eğer eğitildiği veri setinde belli bir grubu "daha riskli" görüyorsa, o gruba karşı ayrımcı kararlar verme potansiyeli taşır. Bu, sistemin kodunun değil, **insanlığın yansıttığı önyargının** bir sonucudur.
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const ctx = document.getElementById('etikChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Hız', 'Tarafsızlık', 'Empati', 'Mantık', 'Sorumluluk'],
+            datasets: [{
+                label: 'İnsan Karar Mekanizması',
+                data: [40, 50, 95, 60, 90],
+                backgroundColor: 'rgba(44, 62, 80, 0.2)',
+                borderColor: '#2c3e50',
+                borderWidth: 2
+            },
+            {
+                label: 'Yapay Zeka (Mevcut)',
+                data: [100, 80, 5, 95, 30],
+                backgroundColor: 'rgba(139, 0, 0, 0.2)',
+                borderColor: '#8b0000',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            elements: { line: { tension: 0.1 } },
+            plugins: { title: { display: true, text: 'Karar Verme Yetkinlik Karşılaştırması' } }
+        }
+    });
+});
+</script>
 
-Yapay zeka etiği, sadece makinelerin nasıl çalıştığını değil, aynı zamanda **insanların nasıl bir toplum istediğini** sorgular.
+## Sorumluluk Kimde?
+
+Bir otonom araç kaza yaptığında veya bir YZ algoritması yanlış bir finansal yatırım tavsiyesi verdiğinde sorumluluk yazılımcıda mı, kullanıcıda mı yoksa algoritmanın kendisinde mi aranmalıdır? Bu soruya verilecek cevap, geleceğin ticaret hukukunu belirleyecektir.
+
+---
+
+### Referanslar ve Notlar
+[^1]: Kır, A. E. (2026). *Algoritmik Adalet ve Geleceğin Hukuku*, Tarih ve Analiz Blogu.
+[^2]: IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems.
