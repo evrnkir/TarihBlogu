@@ -28,9 +28,10 @@ exclude:
 # Sayfa Ayarları
 header_pages:
   - about.markdown
-
+languages: ["tr", "en"]
 # Sass Ayarları
 sass:
   style: compressed
   load_paths:
     - _sass
+    
