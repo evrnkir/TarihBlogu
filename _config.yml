@@ -1,38 +1,14 @@
-# Site Bilgileri
-title: Tarih ve Analiz Blogu
+title: AEK Analiz
 email: ademevrenkir@gmail.com
-description: >-
-  Tarihi olayların ekonomi, siyaset ve bilim üzerindeki derinlemesine
-  analizlerini içeren makaleler.
-
-# URL Ayarları
-url: "https://evrnkir.github.io"
+description: Tarih, Teknoloji ve Stratejinin Kesişim Noktası
 baseurl: "/TarihBlogu"
+url: "https://evrnkir.github.io"
 
-# Tema ve Stil
 theme: minima
-
-# Eklentiler (Hata veren kısım burasıydı, tirelerin hizasına dikkat!)
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
 
-# Dosya İstisnaları
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - Gemfile
-  - Gemfile.lock
-  - vendor/
-
-# Sayfa Ayarları
 header_pages:
   - about.markdown
   - projects.md
   - reading-list.md
-languages: ["tr", "en"]
-# Sass Ayarları
-sass:
-  style: compressed
-  load_paths:
-    - _sass
