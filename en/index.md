@@ -3,6 +3,7 @@ layout: page
 title: Analysis & Strategy
 permalink: /en/
 ---
+
 <style>
   .post-list {
     display: grid;
@@ -22,6 +23,7 @@ permalink: /en/
     border-color: #8b0000;
   }
 </style>
+
 Welcome to the English version of my analysis portfolio. Here, I explore the intersections of **Economic History**, **Quantum Technologies**, and **Strategic Finance**, reflecting my academic vision at Istanbul Medipol University.
 
 ---
