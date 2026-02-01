@@ -97,3 +97,42 @@ canvas, img, iframe {
   background-color: #fdfcf8;
   border-top: 1px solid #eee;
 }
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Link Efektleri */
+a {
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Yazı Listesi Görünümü */
+.post-list {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.post-item {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.post-link {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #8b0000;
+  text-decoration: none;
+}

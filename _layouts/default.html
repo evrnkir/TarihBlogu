@@ -8,38 +8,21 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content" style="flex: 1; padding: 40px 0;">
-      <div class="wrapper" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+      <div class="wrapper" style="max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
         {{ content }}
       </div>
     </main>
 
     {% include footer.html %}
 
-    {% if site.google_analytics %}
-      {% include google-analytics.html %}
-    {% endif %}
-
     <style>
-      body {
-        color: #333;
-        line-height: 1.8; /* Akademik metinler için ideal satır aralığı */
+      body { color: #333; line-height: 1.8; overflow-x: hidden; }
+      @media screen and (max-width: 768px) {
+        .site-header .wrapper { flex-direction: column !important; text-align: center !important; }
+        .site-nav { margin: 10px 0; gap: 10px !important; }
       }
-      .wrapper {
-        box-sizing: border-box;
-      }
-      /* Linklerin üzerine gelindiğinde hafif şeffaflık */
-      a {
-        transition: opacity 0.2s;
-      }
-      a:hover {
-        opacity: 0.7;
-      }
-      /* Mobil ekranlar için kenar boşluğu ayarı */
-      @media screen and (max-width: 600px) {
-        .wrapper {
-          padding: 0 15px;
-        }
-      }
+      canvas, img, iframe { max-width: 100% !important; height: auto !important; border-radius: 8px; display: block; margin: 20px auto; }
     </style>
+
   </body>
 </html>
