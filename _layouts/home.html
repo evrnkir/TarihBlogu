@@ -3,66 +3,46 @@ layout: default
 ---
 
 <div class="home">
-    
-    ---
-layout: default
----
-
-<div class="home">
-    <header style="text-align: center; padding-bottom: 40px;">
+    <header style="text-align: center; padding-bottom: 40px; margin-top: 20px;">
         <div class="home-logo-container" style="margin-bottom: 25px;">
-            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="AEK Analiz Logo" style="max-width: 200px; height: auto;">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="AEK Analiz Logo" style="max-width: 220px; height: auto; display: inline-block;">
         </div>
         
-        <h1 style="font-size: 1.4rem; color: #8b0000; margin-bottom: 0;">// GÜNCEL PROJE ANALİZLERİ //</h1>
-        <p style="font-size: 1.1rem; color: #666; margin-top: 8px;">Tarih, Teknoloji ve Stratejinin Kesişim Noktası</p>
+        <h1 style="font-size: 1.5rem; color: #8b0000; margin-bottom: 0; font-family: 'Lora', serif; font-weight: bold;">
+            // GÜNCEL PROJE ANALİZLERİ //
+        </h1>
+        <p style="font-size: 1.1rem; color: #666; margin-top: 8px; font-style: italic;">
+            Tarih, Teknoloji ve Stratejinin Kesişim Noktası
+        </p>
     </header>
 
     <section class="section">
-        <h2>Öne Çıkan Çalışmalar</h2>
-        <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; font-weight: bold;">Öne Çıkan Çalışmalar</h2>
+        <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 25px;">
             {% for post in site.posts limit: 3 %}
-                <div class="card" style="padding: 20px; border-left: 5px solid #8b0000; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <h3><a href="{{ post.url | relative_url }}" style="color: #8b0000; text-decoration: none;">{{ post.title | escape }}</a></h3>
-                    <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-</div>
-
-    <section class="section" style="margin-bottom: 50px;">
-        <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; color: #2c3e50;">Öne Çıkan Çalışmalar</h2>
-        <div class="card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
-            
-            {% for post in site.posts limit: 3 %}
-                <div class="card" style="padding: 25px; border-left: 5px solid #8b0000; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: all 0.3s ease;">
+                <div class="card" style="padding: 25px; border-left: 5px solid #8b0000; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 0 8px 8px 0;">
                     <h3 style="margin-top: 0;">
-                        <a href="{{ post.url | relative_url }}" style="color: #8b0000; text-decoration: none; font-weight: bold;">
+                        <a href="{{ post.url | relative_url }}" style="color: #8b0000; text-decoration: none; font-weight: bold; font-size: 1.3rem;">
                             {{ post.title | escape }}
                         </a>
                     </h3>
-                    <span class="post-meta" style="color: #888; font-size: 0.9em;">{{ post.date | date: "%d %B %Y" }}</span>
-                    <p style="margin: 15px 0; line-height: 1.6; color: #444;">{{ post.excerpt | strip_html | truncate: 150 }}</p>
-                    <a href="{{ post.url | relative_url }}" style="color: #8b0000; font-weight: bold; text-decoration: none; border-bottom: 1px solid #8b0000;">Analizi Oku ></a>
+                    <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">{{ post.date | date: "%d %B %Y" }}</div>
+                    <p style="color: #444; line-height: 1.7; font-size: 1rem;">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+                    <a href="{{ post.url | relative_url }}" style="color: #8b0000; font-weight: bold; text-decoration: none; border-bottom: 2px solid #8b0000; padding-bottom: 2px;">Analizi Oku →</a>
                 </div>
             {% endfor %}
-            
         </div>
     </section>
 
-    <section class="section">
-        <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; color: #2c3e50;">Tüm Yazılar</h2>
-        <ul class="post-list" style="list-style: none; padding: 0;">
-          {%- for post in site.posts -%}
-            {% if forloop.index > 3 %}
-                <li style="padding: 15px 0; border-bottom: 1px solid #eee;">
-                    <span class="post-meta" style="color: #999; margin-right: 15px;">{{ post.date | date: "%Y-%m-%d" }}</span>
-                    <h3 style="display: inline; font-size: 1.2rem;"><a class="post-link" href="{{ post.url | relative_url }}" style="color: #333; text-decoration: none;">{{ post.title | escape }}</a></h3>
-                </li>
-            {% endif %}
-          {%- endfor -%}
+    <section class="section" style="margin-top: 60px;">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px;">Tüm Yazılar Arşivi</h2>
+        <ul style="list-style: none; padding: 0; margin-top: 20px;">
+          {% for post in site.posts offset: 3 %}
+            <li style="padding: 15px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                <a href="{{ post.url | relative_url }}" style="color: #333; text-decoration: none; font-size: 1.1rem; font-weight: 500;">{{ post.title }}</a>
+                <span style="color: #999; font-size: 0.9rem;">{{ post.date | date: "%Y-%m-%d" }}</span>
+            </li>
+          {% endfor %}
         </ul>
     </section>
-
 </div>
