@@ -22,6 +22,19 @@
         .site-nav { margin: 10px 0; gap: 10px !important; }
       }
       canvas, img, iframe { max-width: 100% !important; height: auto !important; border-radius: 8px; display: block; margin: 20px auto; }
+      /* Ana Sayfa Logosunu Sınırla */
+.main-logo-container img {
+  width: 200px !important; /* İdeal boyut */
+  height: auto !important;
+  margin: 0 auto;
+}
+
+/* Mobilde logonun çok küçük kalmaması için */
+@media screen and (max-width: 600px) {
+  .main-logo-container img {
+    width: 150px !important;
+  }
+}
     </style>
 
   </body>
