@@ -40,3 +40,5 @@ sass:
   style: compressed
   load_paths:
     - _sass
+    [cite_start]email: ademevrenkir@gmail.com [cite: 10]
+github_username: evrnkir

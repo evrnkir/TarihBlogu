@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header" style="margin-bottom: 30px; border-bottom: 2px solid #8b0000; padding-bottom: 10px;">
+    <h1 class="post-title p-name" itemprop="name headline" style="color: #8b0000; font-family: 'Lora', serif; font-weight: bold;">
+        {{ page.title | escape }}
+    </h1>
+    <p class="post-meta" style="font-style: italic; color: #666;">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%d %B %Y" }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody" style="line-height: 1.8; font-size: 1.1em;">
+    {{ content }}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+<div style="margin-top: 50px; padding: 20px; background: #f9f9f9; border-top: 1px solid #eee;">
+    <strong>Analiz Hakkında:</strong> Bu yazı, tarihsel veriler ışığında ekonomi ve strateji perspektifiyle hazırlanmıştır.
+</div>

@@ -35,3 +35,19 @@ M.S. 1. yüzyılda, bir denarius'taki gümüş oranı yaklaşık %95'ti. Ancak N
 
 * **M.S. 2. Yüzyıl:** Gümüş oranı %50'ye düştü.
 * **M.S. 3. Yüzyıl:** Gümüş oranı neredeyse %5'e düştü (bronz sikke haline geldi).
+<canvas id="enflasyonChart" width="400" height="200"></canvas>
+<script>
+const ctx = document.getElementById('enflasyonChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['M.Ö 27', 'M.S 180', 'M.S 211', 'M.S 270'],
+        datasets: [{
+            label: 'Denarius Gümüş Oranı (%)',
+            data: [95, 75, 50, 5],
+            borderColor: 'rgba(139, 0, 0, 1)',
+            tension: 0.1
+        }]
+    }
+});
+</script>
