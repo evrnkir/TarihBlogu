@@ -1,15 +1,29 @@
 <header class="site-header" style="border-bottom: 2px solid #8b0000; padding: 15px 0; background: #fff; width: 100%;">
   <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; max-width: 900px; margin: 0 auto; padding: 0 20px;">
     
-    <a href="{{ site.baseurl }}/" style="text-decoration: none; color: #8b0000; font-family: 'Lora', serif; font-size: 1.4rem; font-weight: bold; white-space: nowrap;">
-      AEK ANALİZ
-    </a>
+    {% if page.url contains '/en/' %}
+      <a href="{{ '/en/' | relative_url }}" style="text-decoration: none; color: #8b0000; font-family: 'Lora', serif; font-size: 1.4rem; font-weight: bold; white-space: nowrap;">
+        AEK ANALYSIS
+      </a>
+    {% else %}
+      <a href="{{ site.baseurl }}/" style="text-decoration: none; color: #8b0000; font-family: 'Lora', serif; font-size: 1.4rem; font-weight: bold; white-space: nowrap;">
+        AEK ANALİZ
+      </a>
+    {% endif %}
 
     <nav class="site-nav" style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
-      <a class="page-link" href="{{ '/about/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Hakkımda</a>
-      <a class="page-link" href="{{ '/projects/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Projeler</a>
       
-     <a class="page-link" href="{{ '/okuma-listesi/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Okuma Listesi</a>
+      {% if page.url contains '/en/' %}
+        <a class="page-link" href="{{ '/en/about/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">About</a>
+        <a class="page-link" href="{{ '/en/projects/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Projects</a>
+        <a class="page-link" href="{{ '/en/readinglist/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Reading List</a>
+      
+      {% else %}
+        <a class="page-link" href="{{ '/about/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Hakkımda</a>
+        <a class="page-link" href="{{ '/projects/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Projeler</a>
+        <a class="page-link" href="{{ '/okuma-listesi/' | relative_url }}" style="font-weight: 600; color: #333; text-decoration: none; font-size: 0.95rem;">Okuma Listesi</a>
+      {% endif %}
+
     </nav>
 
     <div class="language-switcher" style="font-weight: bold; font-size: 0.9rem; white-space: nowrap;">
