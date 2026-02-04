@@ -1,25 +1,41 @@
 ---
-layout: post
+layout: default
 title: "AI Ethics: The Decision Paradox"
-author: Adem Evren Kır
 date: 2026-02-01
 permalink: /en/ai-ethics/
 lang: en
 ---
 
-# The Moral Responsibility of Algorithms
+<div class="wrapper">
 
-Artificial Intelligence (AI) is no longer just a tool for processing data; it has become an actor making autonomous decisions. However, the "ethical framework" behind these decisions remains a gray area. As I emphasize in my academic studies at Istanbul Medipol University, the legal and economic responsibility for these decisions will be the biggest debate of the future.
+  <h1 style="color: #8b0000; margin-top: 0;">The Moral Responsibility of Algorithms</h1>
 
-## Data Bias and Justice
+  <p>Artificial Intelligence (AI) is no longer just a tool for processing data; it has become an actor making autonomous decisions. However, the "ethical framework" behind these decisions remains a gray area. As I emphasize in my academic studies at Istanbul Medipol University, the legal and economic responsibility for these decisions will be the biggest debate of the future.</p>
 
-An AI model tends to copy human biases in the data it is trained on. If there is historical discrimination in the data set, the algorithm may legitimize this discrimination under the name of "optimization." This situation carries serious risks, especially in international trade and credit scoring systems.
+  <h2 style="color: #8b0000;">Data Bias and Justice</h2>
 
-#### Human vs. AI Trust in Decision Making
-The following radar chart visualizes the gap between public trust in humans and trust in algorithms in complex ethical dilemmas:
+  <p>An AI model tends to copy human biases in the data it is trained on. If there is historical discrimination in the data set, the algorithm may legitimize this discrimination under the name of "optimization." This situation carries serious risks, especially in international trade and credit scoring systems.</p>
 
-<canvas id="ethicsChartEn" width="400" height="200" style="background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 8px; margin: 20px 0;"></canvas>
+  <h4>Human vs. AI Trust in Decision Making</h4>
+  <p>The following radar chart visualizes the gap between public trust in humans and trust in algorithms in complex ethical dilemmas:</p>
 
+  <canvas id="ethicsChartEn" width="400" height="200" style="background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 8px; margin: 20px 0;"></canvas>
+
+  <h2 style="color: #8b0000;">Who is Responsible?</h2>
+
+  <p>When an autonomous vehicle crashes or an AI algorithm gives wrong financial investment advice, should the responsibility be sought in the developer, the user, or the algorithm itself? The answer to this question will determine the future of international trade law.</p>
+
+  <hr>
+
+  <h3>References</h3>
+  <ul>
+    <li>Kır, A. E. (2026). <em>Algorithmic Justice and the Future of Law</em>, History and Analysis Blog.</li>
+    <li>IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems.</li>
+  </ul>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const ctx = document.getElementById('ethicsChartEn').getContext('2d');
@@ -49,13 +65,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-
-## Who is Responsible?
-
-When an autonomous vehicle crashes or an AI algorithm gives wrong financial investment advice, should the responsibility be sought in the developer, the user, or the algorithm itself? The answer to this question will determine the future of international trade law.
-
----
-
-### References
-[^1]: Kır, A. E. (2026). *Algorithmic Justice and the Future of Law*, History and Analysis Blog.
-[^2]: IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems.
