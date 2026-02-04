@@ -1,19 +1,37 @@
-<footer class="site-footer" style="margin-top: 50px; padding: 40px 0; background-color: #fdfcf8; border-top: 1px solid #eee; text-align: center; width: 100%;">
-  <div class="wrapper" style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-    <p style="margin-bottom: 20px; font-weight: bold; color: #8b0000; letter-spacing: 1px;">İLETİŞİM VE PROFESYONEL AĞ</p>
-    
-    <div class="social-links" style="margin-bottom: 20px;">
-      <a href="https://www.linkedin.com/in/adem-evren-kir-362745329/" target="_blank" style="margin: 0 15px; text-decoration: none; color: #2c3e50; font-weight: 500; border-bottom: 1px solid #2c3e50;">LinkedIn</a>
-      <a href="mailto:ademevrenkir@gmail.com" style="margin: 0 15px; text-decoration: none; color: #2c3e50; font-weight: 500; border-bottom: 1px solid #2c3e50;">E-posta</a>
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper" style="text-align: center; padding: 40px 0; border-top: 1px solid #eee;">
+
+    <div style="margin-bottom: 20px;">
+      <a href="{{ '/' | relative_url }}" style="font-family: 'Lora', serif; font-weight: bold; font-size: 1.2rem; color: #8b0000; text-decoration: none;">
+        AEK ANALİZ
+      </a>
     </div>
 
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
-            style="position: fixed; bottom: 30px; right: 30px; background: #8b0000; color: #fff; border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); font-weight: bold; font-size: 1.2rem; z-index: 1001;">
-      ↑
-    </button>
-
-    <p style="font-size: 0.85rem; color: #999;">
-      © {{ "now" | date: "%Y" }} Adem Evren Kır. Uluslararası Ticaret ve Finans Portfolyosu.
+    <p style="color: #666; font-size: 0.95rem; max-width: 600px; margin: 0 auto 25px auto;">
+      Stratejik düşünce, ekonomik tarih ve gelecek teknolojileri üzerine bağımsız analiz platformu.
     </p>
+
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      
+      <a href="https://www.linkedin.com/in/adem-evren-kir-362745329/" target="_blank" style="text-decoration: none; color: #333; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+        <span style="background: #0077b5; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">in</span> LinkedIn
+      </a>
+
+      <a href="mailto:ademevrenkir@gmail.com" style="text-decoration: none; color: #333; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+        <span style="background: #8b0000; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">@</span> E-posta
+      </a>
+
+      <a href="https://github.com/evrnkir" target="_blank" style="text-decoration: none; color: #333; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+        <span style="background: #333; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">Git</span> GitHub
+      </a>
+
+    </div>
+
+    <div style="margin-top: 30px; font-size: 0.8rem; color: #999;">
+      &copy; {{ site.time | date: '%Y' }} Adem Evren Kır. Tüm hakları saklıdır.
+    </div>
+
   </div>
 </footer>
