@@ -1,8 +1,11 @@
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
 title: AEK Analiz
 description: Tarih ve Finans Analiz Portalı
 baseurl: "/TarihBlogu"
 url: "https://evrnkir.github.io"
+
+# Tema ayarını sildik, böylece main.css aktif olacak
+plugins:
+  - jekyll-feed
+
+# Dil ayarı (isteğe bağlı)
+languages: ["tr", "en"]

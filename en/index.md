@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Analysis & Strategy | AEK
+title: Analysis & Strategy
 permalink: /en/
 ---
 
