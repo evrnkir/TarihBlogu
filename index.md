@@ -11,8 +11,10 @@ title: AEK Analiz | Stratejik Vizyon
   </p>
 </header>
 
-<div style="background: #fff; border-radius: 60px; padding: 8px 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); margin-bottom: 50px; border: 1px solid #f5f5f5;">
-  {% include market-ticker.html %}
+<div style="background: #fff; border-radius: 50px; padding: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); margin-bottom: 50px; border: 1px solid #f0f0f0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+  <div style="width: 100%; border-radius: 45px; overflow: hidden;">
+    {% include market-ticker.html %}
+  </div>
 </div>
 
 ---
