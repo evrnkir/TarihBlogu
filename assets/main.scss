@@ -1,11 +1,11 @@
 ---
 ---
 
-/* Temel İskelet */
+/* 1. Genel Yapı ve Esneklik */
 body {
   font-family: 'Lora', 'Georgia', serif;
-  font-size: 18px;
-  line-height: 1.85;
+  font-size: 18px; /* Okunabilir boyut */
+  line-height: 1.8;
   background-color: #fdfdfd;
   color: #2c3e50;
   margin: 0;
@@ -14,25 +14,27 @@ body {
   flex-direction: column;
 }
 
-/* Sayfa Genişliği ve Hizalama */
+/* Sayfa İçeriğini Ortalar ve Taşmayı Engeller */
 .wrapper {
-  max-width: 850px; /* Okuma kolaylığı için ideal genişlik */
+  max-width: 850px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box; /* Önemli: Padding'in kutuyu büyütmesini engeller */
 }
 
-/* Header & Navigasyon Düzeni */
+/* 2. Header & Navigasyon (Hizalama Tamiri) */
 .site-header {
   border-top: 5px solid #8b0000;
   border-bottom: 1px solid #f0f0f0;
   background: #ffffff;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .site-title {
   font-weight: 800;
   color: #8b0000 !important;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
   float: left;
 }
@@ -44,13 +46,12 @@ body {
 
 .site-nav .page-link {
   color: #333;
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 16px;
 }
 
-/* Alt Sayfalar İçin İçerik Düzeni (Hakkımda, Projeler vb.) */
+/* 3. Sayfa İçeriği ve Listeler (Hakkımda, Projeler vb.) */
 .page-content {
   padding: 40px 0;
   flex: 1;
@@ -58,25 +59,20 @@ body {
 
 .post-content h1, .post-content h2, .post-content h3 {
   color: #8b0000;
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 15px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.post-content p {
-  margin-bottom: 20px;
 }
 
 .post-content ul, .post-content ol {
-  margin-left: 30px;
-  margin-bottom: 25px;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .post-content li {
   margin-bottom: 10px;
 }
 
-/* Ana Sayfa Analiz Kartları (Eski hali korunuyor) */
+/* 4. Ana Sayfa Kart Tasarımı */
 .post-item {
   background: #ffffff;
   border: 1px solid #f0f0f0;
@@ -85,6 +81,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   transition: all 0.3s ease;
+  overflow: hidden; /* Taşmayı engeller */
 }
 
 .post-item:hover {
@@ -97,15 +94,24 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   display: block;
-  margin-bottom: 10px;
   text-decoration: none;
 }
 
-/* Footer */
+/* 5. Footer Temizliği */
 .site-footer {
   border-top: 1px solid #f0f0f0;
-  padding: 40px 0;
-  font-size: 15px;
-  color: #828282;
+  padding: 30px 0;
   text-align: center;
+  clear: both;
+}
+
+/* Mobil Uyumluluk */
+@media screen and (max-width: 600px) {
+  .site-title, .site-nav {
+    float: none;
+    text-align: center;
+  }
+  .site-nav {
+    line-height: 40px;
+  }
 }
