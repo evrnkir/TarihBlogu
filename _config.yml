@@ -3,9 +3,10 @@ description: Tarih ve Finans Analiz Portalı
 baseurl: "/TarihBlogu"
 url: "https://evrnkir.github.io"
 
-# Tema ayarını sildik, böylece main.css aktif olacak
+# BU SATIR ÇOK ÖNEMLİ! Sitenin iskeletini bu sağlar.
+theme: minima
+
 plugins:
   - jekyll-feed
 
-# Dil ayarı (isteğe bağlı)
 languages: ["tr", "en"]
