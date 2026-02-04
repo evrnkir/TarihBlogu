@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Okuma Listesi
-permalink: /readinglist/
+permalink: /okuma-listesi/
 ---
 
 Bu liste, stratejik düşünce ve finansal analiz yolculuğumda vizyonumu şekillendiren temel kaynaklardan oluşmaktadır.
 
-### 🏛️ Stratejik Okumalar
+### 🏛️ Felsefe ve Strateji
 * **Kendime Düşünceler** - Marcus Aurelius
 * **Derin Çalışma** - Cal Newport
 
-### 📈 Finansal Literatür
+### 📈 Ekonomi ve Finans
 * **Akıllı Yatırımcı** - Benjamin Graham
