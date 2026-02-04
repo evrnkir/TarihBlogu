@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Reading List
-permalink: /en/reading-list/
+permalink: /en/readinglist/
 ---
 
-### Philosophy & Strategy
+This list consists of the fundamental resources that shape my vision.
+
+### 🏛️ Strategic Readings
 * **Meditations** - Marcus Aurelius
 * **Deep Work** - Cal Newport
-
-### Finance & Global Trade
-* **The Intelligent Investor** - Benjamin Graham
