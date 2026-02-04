@@ -4,23 +4,14 @@ title: Okuma Listesi
 permalink: /readinglist/
 ---
 
-Bu liste, stratejik düşünce, finansal analiz ve kişisel gelişim yolculuğumda vizyonumu şekillendiren temel kaynaklardan oluşmaktadır.
+<div class="wrapper">
+  <p>Bu liste, stratejik düşünce ve finansal analiz yolculuğumda vizyonumu şekillendiren temel kaynaklardan oluşmaktadır.</p>
 
----
+  ### 🏛️ Felsefe ve Strateji
+  * **Kendime Düşünceler** - Marcus Aurelius
+  * **Derin Çalışma** - Cal Newport
 
-### 🏛️ Felsefe ve Strateji
-* **Kendime Düşünceler** - Marcus Aurelius (Stoacılık prensipleri üzerine)
-* **Derin Çalışma (Deep Work)** - Cal Newport (Bilişsel odaklanma stratejileri)
-* **Sokratik Sorgulama Tekniği** - Platon (Eleştirel düşünme yöntemleri)
-
-### 📈 Ekonomi ve Finans
-* **Akıllı Yatırımcı** - Benjamin Graham (Değer yatırımı analizi)
-* **Uluslararası Ticaret ve Finans Notları** - (Medipol Üniversitesi çalışmalarımdan kesitler)
-
-### 💻 Teknoloji ve Gelecek
-* **Kuantum Çağı Analizleri** - (Kendi teknolojik araştırmalarım)
-* **Yapay Zeka Etiği Raporları**
-
----
-
-> "Okumak, ruhu zenginleştirmenin en kısa yoludur."
+  ### 📈 Ekonomi ve Finans
+  * **Akıllı Yatırımcı** - Benjamin Graham
+  * **Uluslararası Ticaret Notları** - Medipol Üniversitesi
+</div>
