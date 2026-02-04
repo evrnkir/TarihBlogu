@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Okuma Listesi
+permalink: /readinglist/
 ---
 
 Bu liste, stratejik düşünce, finansal analiz ve kişisel gelişim yolculuğumda vizyonumu şekillendiren temel kaynaklardan oluşmaktadır.
