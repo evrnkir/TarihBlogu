@@ -1,11 +1,6 @@
 ---
-
-layout: page
-
-title: Projelerim
-
-permalink: /projects/
-
+layout: default
+title: Projeler
 ---
 
 

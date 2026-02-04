@@ -1,119 +1,23 @@
 ---
 ---
 
-/* 1. Genel Ayarlar */
-body {
-  font-family: 'Lora', 'Georgia', serif;
-  font-size: 18px; 
-  line-height: 1.7; /* Çok az daraltıldı, daha derli toplu durması için */
-  background-color: #fdfdfd;
-  color: #2c3e50;
-  margin: 0;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-/* 2. Wrapper (Sayfa Hizalaması) */
+/* Sayfayı Ortalar ve İçeriği Kutunun İçinde Tutar */
 .wrapper {
-  max-width: 800px; /* Okuma listesi ve projelerin dağılmaması için ideal genişlik */
+  max-width: 850px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 40px 20px; /* Üstten ve yanlardan ferah boşluk */
   width: 100%;
   box-sizing: border-box;
 }
 
-/* 3. Header & Navigasyon (Hatalı Hizalama Tamiri) */
-.site-header {
-  border-top: 5px solid #8b0000;
-  border-bottom: 1px solid #f0f0f0;
-  background: #ffffff;
-  padding: 15px 0;
-  clear: both;
-}
-
-.site-title {
-  font-weight: 800;
-  color: #8b0000 !important;
-  font-size: 24px;
-  text-decoration: none;
-  float: left;
-}
-
-.site-nav {
-  float: right;
-  line-height: 40px;
-}
-
-.site-nav .page-link {
-  color: #333;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-/* 4. Sayfa İçeriği ve Madde İşaretleri (Proje/Okuma Listesi Tamiri) */
-.page-content {
-  padding: 30px 0;
-  flex: 1;
-}
-
-.post-content h1, .post-content h2, .post-content h3 {
-  color: #8b0000;
-  margin-top: 35px;
-  margin-bottom: 15px;
-  clear: both;
-}
-
+/* Alt Sayfalardaki Madde İşaretlerini Hizalar */
 .post-content ul, .post-content ol {
-  margin-left: 0;
-  padding-left: 25px; /* Madde işaretlerini hizaya sokar */
-  margin-bottom: 25px;
-  list-style-position: outside;
+  padding-left: 30px;
+  margin: 20px 0;
+  display: block;
 }
 
 .post-content li {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   line-height: 1.6;
-}
-
-/* 5. Ana Sayfa Kartları (Görünüm Korundu) */
-.post-item {
-  background: #ffffff;
-  border: 1px solid #f0f0f0;
-  padding: 30px;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  transition: all 0.3s ease;
-  clear: both;
-}
-
-.post-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(139, 0, 0, 0.06);
-}
-
-.post-link {
-  color: #1a1a1a !important;
-  font-size: 1.6rem;
-  font-weight: 700;
-  display: block;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-/* 6. Footer */
-.site-footer {
-  border-top: 1px solid #f0f0f0;
-  padding: 30px 0;
-  text-align: center;
-  clear: both;
-}
-
-/* Mobil Düzenleme */
-@media screen and (max-width: 600px) {
-  .site-title, .site-nav { float: none; text-align: center; }
-  .wrapper { padding: 0 15px; }
 }

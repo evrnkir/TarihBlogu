@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Hakkımda ve Blog Amacı
+layout: default
+title: Hakkımda
 permalink: /about/
 ---
 
