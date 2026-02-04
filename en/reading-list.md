@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Okuma Listesi
-permalink: /readinglist/
+title: Reading List
+permalink: /en/reading-list/
 ---
 
 ### Philosophy & Strategy
